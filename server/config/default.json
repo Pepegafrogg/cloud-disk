@@ -1,0 +1,5 @@
+{
+   "serverPort":5000,
+   "dbUrl": "mongodb+srv://PepegaFrog:like228like@cloud.njqnabe.mongodb.net/?retryWrites=true&w=majority",
+   "secretKey": "TWT 10$"
+}
