@@ -1,11 +1,13 @@
-const { Schema, model, ObjectId } = require('mongoose')
+const {Schema, model, ObjectId} = require("mongoose")
 
-const user = new Schema({
-   email: { type: String, required: true, unique: true },
-   password: { type: String, required: true },
-   diskSpace: { type: Number, default: 1024 ** 3 * 10 },
-   usedSpace: { type: Number, default: 0 },
-   avatar: { type: String },
-   files: [{ type: ObjectId, ref: 'File' }]
+
+const User = new Schema({
+    email: {type: String, required: true, unique: true},
+    password: {type: String, required: true},
+    diskSpace: {type: Number, default: 1024**3*10},
+    usedSpace: {type: Number, default: 0},
+    avatar: {type: String},
+    files : [{type: ObjectId, ref:'File'}]
 })
-module.exports = model('User', user)
+
+module.exports = model('User', User)

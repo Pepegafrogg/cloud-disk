@@ -1,5 +1,7 @@
 {
-   "serverPort":5000,
-   "dbUrl": "mongodb+srv://PepegaFrog:like228like@cloud.njqnabe.mongodb.net/?retryWrites=true&w=majority",
-   "secretKey": "TWT 10$"
+  "serverPort" : 5000,
+  "dbUrl": "mongodb+srv://frog:like228like@cluster0.2iucmnv.mongodb.net/cloud?retryWrites=true&w=majority",
+  "secretKey": "mern-secket-key",
+  "filePath": "C:\\Users\\Pepega\\Desktop\\cloud-disk\\server\\files",
+  "staticPath": "C:\\Users\\Pepega\\Desktop\\cloud-disk\\server\\static"
 }

@@ -1,0 +1,36 @@
+.navContainer{
+   width: 100%;
+   background: #FFFFFF;
+   box-shadow: 0px 3px 4px rgba(92, 92, 92, 0.25);
+}
+.nav{
+   height: 50px;
+   max-width: 1140px;
+   margin: 0 auto;
+   padding: 0 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 700;
+   font-size: 20px;
+   color: #566885;
+   &Logo{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      span{
+         margin-left: 15px;
+      }
+   }
+   &Auth{
+      a{
+         cursor: pointer;
+         margin-right: 25px;
+         text-decoration: none;
+         color: #566885;
+      }
+      a:last-child{
+         margin-right: 0;
+      }
+   }
+}

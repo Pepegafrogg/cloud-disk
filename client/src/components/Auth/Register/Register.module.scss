@@ -1,0 +1,30 @@
+.reg{
+   padding: 20px;
+   color: #566885;
+   background: #FFFFFF;
+   border-radius: 27px;
+   width: 540px;
+   align-self: center;
+   margin-bottom: 50px;
+   &Form{
+      display: flex;
+      flex-direction: column;
+      input{
+         border:2px solid #525e72;
+         padding: 7px;
+         border-radius: 11px;
+         margin-bottom: 10px;
+      }
+      button{
+         margin-top: 20px;
+         align-self: center;
+      }
+   }
+   &Title{
+      text-align: center;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 20px;
+   }
+}
