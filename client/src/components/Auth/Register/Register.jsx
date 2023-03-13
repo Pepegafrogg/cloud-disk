@@ -3,14 +3,16 @@ import ErorrMesage from '../../UI/ErorrMesage/ErorrMesage';
 import Button from './../../UI/Button/Button';
 import { useForm } from 'react-hook-form';
 import s from './Register.module.scss'
-import { registration } from './../../../actions/user';
+import { registration } from './../../../redux/userSlice';
+import { useDispatch } from 'react-redux';
 
 export default function Register() {
+   const dispatch = useDispatch()
    const { register, handleSubmit, formState: { errors } } = useForm({ mode: 'onChange' });
    const isValidEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
    const onSubmit = (data) => {
-      console.log(data)
-      registration(data.email, data.password)
+      const { email, password } = data
+      dispatch(registration({ email, password }))
    }
 
    return (

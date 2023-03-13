@@ -2,11 +2,17 @@ import React from 'react'
 import ErorrMesage from '../../UI/ErorrMesage/ErorrMesage';
 import Button from './../../UI/Button/Button';
 import { useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
 import s from './Login.module.scss'
+import { login } from '../../../redux/userSlice';
 
 export default function Login() {
+   const dispatch = useDispatch()
    const { register, handleSubmit, formState: { errors } } = useForm({ mode: 'onChange' });
-   const onSubmit = data => console.log(data);
+   const onSubmit = (data) => {
+      const { email, password } = data
+      dispatch(login({ email, password }))
+   }
 
    return (
       <div className='container'>
